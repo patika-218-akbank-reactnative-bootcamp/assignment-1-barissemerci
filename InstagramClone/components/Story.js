@@ -25,7 +25,7 @@
        <Image  style={styles.image} source={{uri: 'https://picsum.photos/100/100'}} />
 
        </View>
-        <Text>bar1ssemerc1</Text>
+        <Text style={styles.userName}>bar1ssemerc1</Text>
     </View>
     
      
@@ -36,15 +36,16 @@
  
  const styles = StyleSheet.create({
     container:{
-        backgroundColor:'green',
-        width:125,
-        height:150,
+    
+     
+        width:110,
+        height:125,
         alignItems:'center'
     },
     image:{
-        width:100,
-      height:100,
-      borderRadius:50,
+        width:80,
+      height:80,
+      borderRadius:40,
     
       borderColor:'black',
       borderWidth:4
@@ -52,12 +53,16 @@
     imageContainer:{
         alignItems:'center',
         justifyContent:'center',
-        width:105,
-        height:105,
+        width:80,
+        height:80,
         marginTop:10,
         borderColor:'orange',
-        borderRadius:105/2,
-        borderWidth:53
+        borderRadius:80/2,
+        borderWidth:44
+    },
+    userName:{
+      fontSize:16,
+      color:'black'
     }
   
  

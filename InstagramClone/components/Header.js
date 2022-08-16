@@ -22,11 +22,11 @@
    return (
     
       <View style={styles.header}>
-        <Image style={styles.instagramText} source={{uri: 'https://marka-logo.com/wp-content/uploads/2020/04/Instagram-Logo.png'}} />
+        <Image style={styles.instagramText} source={{uri: 'https://i0.wp.com/www.dafontfree.io/wp-content/uploads/2020/12/instagram-new.png?resize=1100%2C750&ssl=1'}} />
        <View style={styles.icons}>
-        <Icon style={styles.icon} size={40} name='diff-added'/>
-        <Icon style={styles.icon} size={40} name='heart'/>
-        <IconSend style={styles.icon} size={40} name='send'/>
+        <Icon style={styles.icon} size={30} name='diff-added'/>
+        <Icon style={styles.icon} size={30} name='heart'/>
+        <IconSend style={styles.icon} size={30} name='send'/>
        </View>
       </View>
     
@@ -39,25 +39,22 @@
  const styles = StyleSheet.create({
   
   instagramText:{
-    width:190,
+    width:170,
     height:80,
-    marginLeft:10,
     marginTop:5
   },
   icon:{
-      color:'white',
-      marginRight:15
+      color:'black',
+      marginRight:20
 
   },
   icons:{
-    backgroundColor:'green',
     flexDirection:'row',
     position:'absolute',
     right:10
    
   },
   header:{
-    backgroundColor:'red',
     flexDirection:'row',
     alignItems:'center',
 

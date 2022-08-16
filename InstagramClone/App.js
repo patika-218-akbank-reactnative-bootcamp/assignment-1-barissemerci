@@ -21,7 +21,7 @@
  } from 'react-native';
 import Header from './components/Header';
 import Stories from './components/Stories';
-
+import Post from './components/Post';
  
  
  const App = () => {
@@ -31,7 +31,12 @@ import Stories from './components/Stories';
     <Header />
     <ScrollView>
     <Stories></Stories>
-    
+    <Post />
+    <Post />
+    <Post />
+    <Post />
+    <Post />
+    <Post />
     </ScrollView>
     </View>
    
