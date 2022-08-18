@@ -22,34 +22,34 @@
 
  
  
- const Post = () => {
+ const Post = ({user,content,imageUri,date,likes,comments}) => {
    return (
     
     <View style={styles.container}>
         <View style={styles.top}>
-        <Image  style={styles.profileImage} source={{uri: 'https://picsum.photos/50/50'}} />
-        <Text style={styles.userName}>bar1ssemerc1</Text>
+        <Image  style={styles.profileImage} source={{uri:user.profileImage}} />
+        <Text style={styles.userName}>{user.username}</Text>
         <IconThreeDots  style={styles.iconThreeDots} size={25} name='dots-three-vertical'/>
         </View>
-        <Image style={styles.image} source={{uri: 'https://picsum.photos/450/450'}} />
+        <Image style={styles.image} source={{uri: imageUri}} />
         <View style={styles.icons}>
             <IconHeart style={styles.icon} size={40} name='heart'/>
             <IconSend style={styles.icon} size={40} name='send'/>
             <IconSave style={styles.iconSave} size={40} name='bookmark-o'/>
         </View>
         <View style={styles.bottom}>
-            <Text style={styles.likes}>8.036 beğenme</Text>
+            <Text style={styles.likes}>{likes} beğenme</Text>
           
-            <Text style={styles.content}><Text style={styles.usernameBottom}>bar1ssemerc1 </Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</Text>
-            <Text style={styles.comments}>44 yorumun tümünü gör</Text>
+            <Text style={styles.content}><Text style={styles.usernameBottom}>{user.username} </Text>{content}</Text>
+            <Text style={styles.comments}>{comments} yorumun tümünü gör</Text>
             <View style={styles.commentAndImage}>
 
-             <Image style={styles.profileImageSmall} source={{uri: 'https://picsum.photos/50/50'}}/>   
+             <Image style={styles.profileImageSmall} source={{uri:user.profileImage}}/>   
             <TextInput  placeholder="Yorum ekle..."></TextInput>
             <Text style={styles.share}>Paylaş</Text>
 
             </View>
-            <Text style={styles.time}>2 saat önce</Text>
+            <Text style={styles.time}>{date}</Text>
 
 
         </View>
